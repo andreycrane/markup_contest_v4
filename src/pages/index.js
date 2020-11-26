@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override, Section } from "@quarkly/components";
 import * as Components from "components";
+import { FaTwitter, FaYoutube } from "react-icons/fa";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
@@ -41,7 +42,8 @@ export default (() => {
 			</Button>
 		</Section>
 		<Section>
-			<Text font="700 21px/25px --fontFamily-googleInter" color="--accentGreen">
+			<Override slot="SectionContent" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/xbox.png?v=2020-11-26T18:14:14.029Z) 100% 100%/auto no-repeat scroll padding-box" height="1010px" justify-content="center" />
+			<Text font="700 21px/25px --fontFamily-googleInter" color="--accentGreen" text-transform="uppercase">
 				completely new
 			</Text>
 			<Text font="600 171px/155px --fontFamily-googleInter" color="--light">
@@ -111,9 +113,16 @@ export default (() => {
 				</Text>
 			</Box>
 		</Section>
-		<Section>
-			<Override slot="SectionContent" flex-direction="row" background="--color-dark" />
-			<Box>
+		<Section padding="0px 0 0px 0" box-sizing="border-box">
+			<Override
+				slot="SectionContent"
+				flex-direction="row"
+				background="--color-dark"
+				overflow-y="hidden"
+				padding="196px 43px 0px 144px"
+				box-sizing="border-box"
+			/>
+			<Box flex="1 0 50%">
 				<Text font="700 72px/79px --fontFamily-googleInter" color="--light">
 					Optimized for
 					<br />
@@ -131,10 +140,34 @@ export default (() => {
 					Series X.
 				</Text>
 			</Box>
-			<Box>
-				<Image width="64px" height="64px" />
-				<Image width="64px" height="64px" />
-				<Image width="64px" height="64px" />
+			<Box flex="1 0 50%" position="relative" min-height="755px">
+				<Image
+					src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/Group%20237.png?v=2020-11-26T16:43:25.506Z"
+					width="263px"
+					height="342px"
+					position="absolute"
+					top="439px"
+					left="200px"
+					zIndex="0"
+				/>
+				<Image
+					width="269px"
+					height="342px"
+					src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/Frame%20237.png?v=2020-11-26T16:43:21.891Z"
+					position="absolute"
+					top="43px"
+					left="200px"
+					zIndex="0"
+				/>
+				<Image
+					width="325px"
+					height="454px"
+					src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/Group%20236.png?v=2020-11-26T18:18:35.720Z"
+					position="absolute"
+					top="130px"
+					left="52px"
+					zIndex="1"
+				/>
 			</Box>
 		</Section>
 		<Section>
@@ -227,7 +260,7 @@ export default (() => {
 		</Section>
 		<Section>
 			<Box display="flex">
-				<Image width="144px" height="44px" src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/logo.svg?v=2020-11-26T16:02:28.431Z" />
+				<Image height="44px" src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/logo.svg?v=2020-11-26T16:02:28.431Z" width="144px" />
 				<Box display="flex" justify-content="center" align-items="center" flex="1 0 auto">
 					<Components.FooterLink margin="0px 43px 0px 0px" />
 					<Components.FooterLink margin="0px 43px 0px 0px">
@@ -240,6 +273,23 @@ export default (() => {
 						inside
 					</Components.FooterLink>
 				</Box>
+				<Box display="flex" align-items="center">
+					<Components.SocialLink1 />
+					<Components.SocialLink1>
+						<Override slot="icon" category="fa" icon={FaTwitter} />
+					</Components.SocialLink1>
+					<Components.SocialLink1>
+						<Override slot="icon" category="fa" icon={FaYoutube} />
+					</Components.SocialLink1>
+				</Box>
+			</Box>
+			<Box display="flex" justify-content="space-between">
+				<Text font="500 16px/24px --fontFamily-googleInter" color="--textSecondary">
+					© Microsoft 2020
+				</Text>
+				<Text font="500 16px/24px --fontFamily-googleInter" color="--textSecondary">
+					Contact us Privacy & cookies
+				</Text>
 			</Box>
 		</Section>
 		<Link

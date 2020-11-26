@@ -7,7 +7,9 @@ const defaultProps = {
 	"color": "--light",
 	"children": "Browse",
 	"text-transform": "uppercase",
-	"text-decoration": "none"
+	"text-decoration": "none",
+	"box-sizing": "border-box",
+	"display": "inline-block"
 };
 const overrides = {};
 
