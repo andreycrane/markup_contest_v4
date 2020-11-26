@@ -16,8 +16,15 @@ export default (() => {
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
-		<Section>
-			<Override slot="SectionContent" flex-direction="row" justify-content="space-between" align-items="center" />
+		<Section padding="72px 106px 0px 106px" box-sizing="border-box">
+			<Override
+				slot="SectionContent"
+				flex-direction="row"
+				justify-content="space-between"
+				align-items="center"
+				margin="0px 0px 0px 0px"
+				width="100%"
+			/>
 			<Image width="144px" height="44px" src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/logo.svg?v=2020-11-26T16:02:28.431Z" />
 			<Box>
 				<Components.MenuLink margin="0px 43px 0px 0px" />
@@ -91,6 +98,7 @@ export default (() => {
 				justify-content="flex-end"
 				background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/7cc62d15-d4d3-4274-b293-88e4c9571c18%201.png?v=2020-11-26T16:29:59.008Z) 0% 0% /auto repeat scroll padding-box"
 				padding="192px 83px 193px 0px"
+				margin="0px 0px 0px 0px"
 			/>
 			<Box>
 				<Override slot="SectionContent" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/7cc62d15-d4d3-4274-b293-88e4c9571c18%201.png?v=2020-11-26T16:29:59.008Z) 0% 0% /auto repeat scroll padding-box" padding="192px 83px 193px 0px" align-items="flex-end" />
@@ -190,18 +198,21 @@ export default (() => {
 				<Box>
 					<Image width="100%" height="100%" src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/image%202.png?v=2020-11-26T17:02:07.140Z" />
 				</Box>
-				<Box background="--color-accentGreen">
-					<Text>
-						Compatible with games on Windows 10
+				<Box background="--color-accentGreen" padding="85px 85px 85px 85px">
+					<Text font="700 60px/66px --fontFamily-googleInter">
+						Compatible
+						<br />
+						with games on Windows 10
 					</Text>
-					<Text>
+					<Text font="600 23px/34px --fontFamily-googleInter" color="--textColor">
 						The gamepad fully supports Windows 10, you can play all the games of this platform and switch easily
 					</Text>
-					<Image width="64px" height="64px" src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/flash%201.png?v=2020-11-26T17:16:57.440Z" />
+					<Image width="100%" height="208px" src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/flash%201.png?v=2020-11-26T17:16:57.440Z" />
 				</Box>
 			</Box>
 		</Section>
 		<Section>
+			<Override slot="SectionContent" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/xbox%20tech%201.png?v=2020-11-26T18:43:35.207Z) center center/contain no-repeat scroll padding-box" height="1199px" />
 			<Text font="91px/91px --fontFamily-googleInter" color="--light">
 				Technologically
 				<br />
