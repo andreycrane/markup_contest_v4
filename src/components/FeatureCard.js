@@ -2,7 +2,8 @@ import React from "react";
 import { useOverrides } from "@quarkly/components";
 import { Image, Text, Box } from "@quarkly/widgets";
 const defaultProps = {
-	"box-sizing": "border-box"
+	"box-sizing": "border-box",
+	"flex": "1 1 auto"
 };
 const overrides = {
 	"image": {
@@ -10,7 +11,8 @@ const overrides = {
 		"props": {
 			"width": "92px",
 			"height": "49px",
-			"src": "https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/4k.svg?v=2020-11-26T16:08:01.337Z"
+			"src": "https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/4k.svg?v=2020-11-26T16:08:01.337Z",
+			"object-position": "0% 50%"
 		}
 	},
 	"text": {

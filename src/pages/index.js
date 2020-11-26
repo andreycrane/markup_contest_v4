@@ -64,16 +64,22 @@ export default (() => {
 				second with Xbox Series X. *
 			</Text>
 		</Section>
-		<Section>
-			<Override slot="SectionContent" flex-direction="row" justify-content="space-between" />
-			<Components.FeatureCard />
-			<Components.FeatureCard>
+		<Section padding="0 205px 0 205px" box-sizing="border-box">
+			<Override
+				slot="SectionContent"
+				flex-direction="row"
+				justify-content="space-between"
+				margin="0px 0px 0px 0px"
+				width="100%"
+			/>
+			<Components.FeatureCard margin="0px 90px 0px 0px" />
+			<Components.FeatureCard margin="0px 90px 0px 0px">
 				<Override slot="image" src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/hdr.svg?v=2020-11-26T16:23:07.666Z" />
 				<Override slot="text">
 					High Dynamic Range
 				</Override>
 			</Components.FeatureCard>
-			<Components.FeatureCard>
+			<Components.FeatureCard margin="0px 90px 0px 0px">
 				<Override slot="image" src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/fps.svg?v=2020-11-26T16:23:27.722Z" />
 				<Override slot="text">
 					Frame per second
@@ -121,16 +127,18 @@ export default (() => {
 				</Text>
 			</Box>
 		</Section>
-		<Section padding="0px 0 0px 0" box-sizing="border-box">
+		<Section padding="0px 104px 0px 104px" box-sizing="border-box">
 			<Override
 				slot="SectionContent"
 				flex-direction="row"
 				background="--color-dark"
 				overflow-y="hidden"
-				padding="196px 43px 0px 144px"
+				padding="64px 43px 0px 144px"
 				box-sizing="border-box"
+				margin="0px 0px 0px 0px"
+				width="100%"
 			/>
-			<Box flex="1 0 50%">
+			<Box flex="1 0 40%" display="flex" flex-direction="column" justify-content="center">
 				<Text font="700 72px/79px --fontFamily-googleInter" color="--light">
 					Optimized for
 					<br />
@@ -148,9 +156,9 @@ export default (() => {
 					Series X.
 				</Text>
 			</Box>
-			<Box flex="1 0 50%" position="relative" min-height="755px">
+			<Box flex="1 0 50%" position="relative" min-height="755px" overflow-y="hidden">
 				<Image
-					src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/Group%20237.png?v=2020-11-26T16:43:25.506Z"
+					src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/Frame%20237.png?v=2020-11-26T16:43:21.891Z"
 					width="263px"
 					height="342px"
 					position="absolute"
@@ -161,7 +169,7 @@ export default (() => {
 				<Image
 					width="269px"
 					height="342px"
-					src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/Frame%20237.png?v=2020-11-26T16:43:21.891Z"
+					src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/Group%20237.png?v=2020-11-26T16:43:25.506Z"
 					position="absolute"
 					top="43px"
 					left="200px"
@@ -182,23 +190,23 @@ export default (() => {
 			<Text font="700 91px/91px --fontFamily-googleInter" text-align="center" color="--light">
 				Complete control
 			</Text>
-			<Box display="grid" grid-template-columns="2" grid-template-rows="auto">
-				<Box height="40px" />
-				<Box grid-column="1 / 2">
+			<Box display="block" grid-template-columns="2" grid-template-rows="auto">
+				<Box height="40px" width="50%" float="left" />
+				<Box width="50%" float="right">
 					<Image height="100%" src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/Rectangle%207.png?v=2020-11-26T16:55:40.977Z" width="100%" />
 				</Box>
-				<Box grid-column="2 / 3">
+				<Box width="50%" float="left">
 					<Text font="600 23px/34px --fontFamily-googleInter" color="--textSecondary">
 						The new Xbox Wireless Controller brings elegant design, refined comfort, and instant sharing to a familiar favorite.
 					</Text>
 				</Box>
-				<Box>
+				<Box width="50%" float="right">
 					<Image width="100%" height="100%" src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/image%203.png?v=2020-11-26T17:01:28.696Z" />
 				</Box>
-				<Box>
+				<Box width="50%" float="left">
 					<Image width="100%" height="100%" src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/image%202.png?v=2020-11-26T17:02:07.140Z" />
 				</Box>
-				<Box background="--color-accentGreen" padding="85px 85px 85px 85px">
+				<Box background="--color-accentGreen" width="50%">
 					<Text font="700 60px/66px --fontFamily-googleInter">
 						Compatible
 						<br />
