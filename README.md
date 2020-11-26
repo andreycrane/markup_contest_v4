@@ -15,6 +15,11 @@
     <img src="https://badgen.net/badge/Gatsby/2.23.12/purple" alt="Gatsby version" />
   </a>
   
+   <a href="https://github.com/andreycrane/markup_contest_v4/pulls">
+     <img src="https://badgen.net/github/prs/andreycrane/markup_contest_v4" alt="Pull Request Amount">
+   </a>
+   <img src="https://badgen.net/github/last-commit/andreycrane/markup_contest_v4" alt="Last commit date" />
+    
   <a href="./LICENSE">
     <img src="https://badgen.net/badge/license/MIT/blue" alt="License">
   </a>

@@ -17,7 +17,10 @@ export default {
 		"5fbfc2ce08b41a001fec7a5f": {
 			"id": "5fbfc2ce08b41a001fec7a5f",
 			"name": "index",
-			"pageUrl": "index"
+			"pageUrl": "index",
+			"styles": {
+				"background": "--color-mainBackground"
+			}
 		}
 	},
 	"mode": "production",
