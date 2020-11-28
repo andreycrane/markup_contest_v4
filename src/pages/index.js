@@ -200,8 +200,15 @@ export default (() => {
 				grid-auto-rows="100px"
 				box-sizing="border-box"
 			>
-				<Box box-sizing="border-box" grid-row="span  1" />
-				<Box box-sizing="border-box" float="left" grid-row="span 2">
+				<Box box-sizing="border-box" grid-row="span  2" />
+				<Box
+					box-sizing="border-box"
+					float="left"
+					grid-row="span 4"
+					display="flex"
+					align-items="center"
+					padding="0px 84px 0px 84px"
+				>
 					<Text font="600 23px/34px --fontFamily-googleInter" color="--textSecondary">
 						The new Xbox Wireless Controller brings elegant design, refined comfort, and instant sharing to a familiar favorite.
 					</Text>
@@ -215,7 +222,7 @@ export default (() => {
 				<Box box-sizing="border-box" float="right" grid-row="span 7">
 					<Image width="100%" height="100%" src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/image%203.png?v=2020-11-26T17:01:28.696Z" object-fit="cover" />
 				</Box>
-				<Box box-sizing="border-box" background="--color-accentGreen" grid-row="span 7">
+				<Box box-sizing="border-box" background="--color-accentGreen" grid-row="span 7" padding="86px 84px 86px 84px">
 					<Text font="700 60px/66px --fontFamily-googleInter">
 						Compatible
 						<br />
