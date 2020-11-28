@@ -270,7 +270,27 @@ export default (() => {
 			</Box>
 		</Section>
 		<Section inner-max-width="1228px" inner-width="100%">
-			<Override slot="SectionContent" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/xbox%20tech%201.png?v=2020-11-26T18:43:35.207Z) center center/contain no-repeat scroll padding-box" height="1199px" />
+			<Override slot="SectionContent" height="1199px" position="relative" />
+			<Box
+				position="absolute"
+				top={0}
+				left={0}
+				width="100%"
+				height="100%"
+				background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/xbox%20tech%202.png?v=2020-11-28T18:23:03.650Z) center center/contain no-repeat scroll padding-box"
+				pointer-events="none"
+			/>
+			<Box
+				position="absolute"
+				top={0}
+				left={0}
+				width="100%"
+				height="100%"
+				background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/xbox%20tech%201.png?v=2020-11-26T18:43:35.207Z) center center/contain no-repeat scroll padding-box"
+				opacity="1"
+				transition="opacity 1s ease 0s"
+				hover-opacity="0"
+			/>
 			<Text font="normal 700 91px/91px --fontFamily-googleInter" color="--light">
 				Technologically
 				<br />
