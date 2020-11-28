@@ -230,7 +230,13 @@ export default (() => {
 				<Box box-sizing="border-box" float="right" grid-row="span 7">
 					<Image width="100%" height="100%" src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/image%203.png?v=2020-11-26T17:01:28.696Z" object-fit="cover" />
 				</Box>
-				<Box box-sizing="border-box" background="--color-accentGreen" grid-row="span 7" padding="86px 84px 86px 84px">
+				<Box
+					box-sizing="border-box"
+					background="--color-accentGreen"
+					grid-row="span 7"
+					padding="86px 84px 86px 84px"
+					overflow-x="hidden"
+				>
 					<Text font="700 60px/66px --fontFamily-googleInter">
 						Compatible
 						<br />
@@ -239,7 +245,27 @@ export default (() => {
 					<Text font="600 23px/34px --fontFamily-googleInter" color="--textColor">
 						The gamepad fully supports Windows 10, you can play all the games of this platform and switch easily
 					</Text>
-					<Image width="100%" height="208px" src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/flash%201.png?v=2020-11-26T17:16:57.440Z" />
+					<Box position="relative" height="208px" transition="transform 1s ease 0s" hover-transform="translateX(214px)">
+						<Image
+							width="100%"
+							height="100%"
+							src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/flash%201.png?v=2020-11-26T17:16:57.440Z"
+							position="absolute"
+							top={0}
+							left={0}
+						/>
+						<Image
+							width="100%"
+							height="100%"
+							position="absolute"
+							top={0}
+							left={0}
+							src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/flash%202.png?v=2020-11-28T17:47:15.947Z"
+							opacity="0"
+							transition="opacity 1s ease 0s"
+							hover-opacity="1"
+						/>
+					</Box>
 				</Box>
 			</Box>
 		</Section>
