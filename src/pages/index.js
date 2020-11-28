@@ -187,27 +187,35 @@ export default (() => {
 				/>
 			</Box>
 		</Section>
-		<Section inner-max-width="1228px">
+		<Section inner-max-width="1228px" quarkly-title="gallery section">
 			<Text font="700 91px/91px --fontFamily-googleInter" text-align="center" color="--light">
 				Complete control
 			</Text>
-			<Box display="block" grid-template-columns="2" grid-template-rows="auto">
-				<Box height="40px" width="50%" float="left" />
-				<Box width="50%" float="right">
-					<Image height="100%" src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/Rectangle%207.png?v=2020-11-26T16:55:40.977Z" width="100%" />
-				</Box>
-				<Box width="50%" float="left">
+			<Box
+				display="grid"
+				grid-template-rows="auto"
+				quarkly-title="masonry layout"
+				grid-gap="18px 15px"
+				grid-template-columns="1fr 1fr"
+				grid-auto-rows="100px"
+				box-sizing="border-box"
+			>
+				<Box box-sizing="border-box" grid-row="span  1" />
+				<Box box-sizing="border-box" float="left" grid-row="span 2">
 					<Text font="600 23px/34px --fontFamily-googleInter" color="--textSecondary">
 						The new Xbox Wireless Controller brings elegant design, refined comfort, and instant sharing to a familiar favorite.
 					</Text>
 				</Box>
-				<Box width="50%" float="right">
-					<Image width="100%" height="100%" src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/image%203.png?v=2020-11-26T17:01:28.696Z" />
+				<Box box-sizing="border-box" float="right" grid-row="span 7">
+					<Image height="100%" src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/Rectangle%207.png?v=2020-11-26T16:55:40.977Z" width="100%" object-fit="cover" />
 				</Box>
-				<Box width="50%" float="left">
-					<Image width="100%" height="100%" src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/image%202.png?v=2020-11-26T17:02:07.140Z" />
+				<Box box-sizing="border-box" float="left" grid-row="span 7">
+					<Image width="100%" height="100%" src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/image%202.png?v=2020-11-26T17:02:07.140Z" object-fit="cover" />
 				</Box>
-				<Box background="--color-accentGreen" width="50%">
+				<Box box-sizing="border-box" float="right" grid-row="span 7">
+					<Image width="100%" height="100%" src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/image%203.png?v=2020-11-26T17:01:28.696Z" object-fit="cover" />
+				</Box>
+				<Box box-sizing="border-box" background="--color-accentGreen" grid-row="span 7">
 					<Text font="700 60px/66px --fontFamily-googleInter">
 						Compatible
 						<br />
