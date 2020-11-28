@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Box, Button, Text } from "@quarkly/widgets";
+import { Theme, Link, Image, Box, Button, Text, Span } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override, Section } from "@quarkly/components";
@@ -95,7 +95,10 @@ export default (() => {
 		</Section>
 		<Section inner-max-width="1228px" inner-width="100%">
 			<Text font="normal 700 91px/104.65px --fontFamily-googleInter" text-align="center" color="--light">
-				The fastest and the most powerful console xbox for the entire history
+				The fastest and the most powerful console xbox for the{" "}
+				<Span color="--accentGreen">
+					entire history
+				</Span>
 			</Text>
 		</Section>
 		<Section inner-max-width="1228px" inner-width="100%" justify-content="center">
@@ -189,7 +192,10 @@ export default (() => {
 		</Section>
 		<Section inner-max-width="1228px" quarkly-title="gallery section">
 			<Text font="700 91px/91px --fontFamily-googleInter" text-align="center" color="--light">
-				Complete control
+				Complete{" "}
+				<Span color="--accentGreen">
+					control
+				</Span>
 			</Text>
 			<Box
 				display="grid"
@@ -237,10 +243,12 @@ export default (() => {
 		</Section>
 		<Section inner-max-width="1228px" inner-width="100%">
 			<Override slot="SectionContent" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/xbox%20tech%201.png?v=2020-11-26T18:43:35.207Z) center center/contain no-repeat scroll padding-box" height="1199px" />
-			<Text font="91px/91px --fontFamily-googleInter" color="--light">
+			<Text font="normal 700 91px/91px --fontFamily-googleInter" color="--light">
 				Technologically
 				<br />
-				perfect
+				<Span color="--accentGreen">
+					perfect
+				</Span>
 			</Text>
 			<Text font="600 23px/34px --fontFamily-googleInter" color="--textSecondary">
 				The new Xbox Wireless Controller
@@ -266,7 +274,10 @@ export default (() => {
 		</Section>
 		<Section inner-max-width="1228px" inner-width="100%">
 			<Text font="700 91px/91px --fontFamily-googleInter" color="--light">
-				Frequently asked questions control
+				Frequently asked questions{" "}
+				<Span color="--accentGreen">
+					control
+				</Span>
 			</Text>
 			<Components.Accordion>
 				<Override slot="text">
