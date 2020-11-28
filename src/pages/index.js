@@ -377,7 +377,21 @@ export default (() => {
 			<Text font="700 21px/25px --fontFamily-googleInter" color="--accentGreen" text-align="center" text-transform="uppercase">
 				pre order
 			</Text>
-			<Box height="597px" background="url(https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/xbox%20purchase.png?v=2020-11-26T17:27:28.520Z)" />
+			<Box height="597px" background="url(https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/xbox%20purchase.png?v=2020-11-26T17:27:28.520Z)" position="relative">
+				<Image
+					width="173px"
+					height="173px"
+					src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/badge.svg?v=2020-11-28T19:31:01.204Z"
+					position="absolute"
+					bottom="auto"
+					left="310px"
+					right="auto"
+					top="77px"
+					transform="rotate(0deg)"
+					transition="transform 1s ease 0s"
+					hover-transform="rotate(180deg)"
+				/>
+			</Box>
 		</Section>
 		<Section inner-max-width="1228px" inner-width="100%">
 			<Text font="700 91px/91px --fontFamily-googleInter" color="--light">
