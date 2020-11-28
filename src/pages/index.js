@@ -105,18 +105,20 @@ export default (() => {
 			<Override
 				slot="SectionContent"
 				flex-direction="row"
-				justify-content="center"
-				background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/7cc62d15-d4d3-4274-b293-88e4c9571c18%201.png?v=2020-11-26T16:29:59.008Z) 0% 0% /auto repeat scroll padding-box"
+				justify-content="flex-end"
+				background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/7cc62d15-d4d3-4274-b293-88e4c9571c18%201.png?v=2020-11-26T16:29:59.008Z) 0% 0% /cover no-repeat scroll padding-box"
 				margin="0px 0px 0px 0px"
+				padding="192px 118px 192px 0px"
+				align-items="center"
 			/>
 			<Box>
 				<Override slot="SectionContent" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/7cc62d15-d4d3-4274-b293-88e4c9571c18%201.png?v=2020-11-26T16:29:59.008Z) 0% 0% /auto repeat scroll padding-box" padding="192px 83px 193px 0px" align-items="flex-end" />
-				<Text font="700 72px/72px --fontFamily-googleInter" color="--light">
+				<Text font="700 72px/72px --fontFamily-googleInter" color="--light" margin="16px 0px 30px 0px">
 					Power you
 					<br />
 					dreams
 				</Text>
-				<Text font="23px/34.5px --fontFamily-googleInter" color="--textSecondary">
+				<Text font="23px/34.5px --fontFamily-googleInter" color="--textSecondary" margin="16px 0px 30px 0px">
 					From future adventures, to current
 					<br />
 					obsessions, to classic titles, thousands of
