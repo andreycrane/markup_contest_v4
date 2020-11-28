@@ -101,7 +101,7 @@ export default (() => {
 				</Span>
 			</Text>
 		</Section>
-		<Section inner-max-width="1228px" inner-width="100%" justify-content="center">
+		<Section inner-max-width="1228px" inner-width="100%" justify-content="center" box-sizing="border-box">
 			<Override
 				slot="SectionContent"
 				flex-direction="row"
@@ -110,6 +110,7 @@ export default (() => {
 				margin="0px 0px 0px 0px"
 				padding="192px 118px 192px 0px"
 				align-items="center"
+				box-sizing="border-box"
 			/>
 			<Box>
 				<Override slot="SectionContent" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/7cc62d15-d4d3-4274-b293-88e4c9571c18%201.png?v=2020-11-26T16:29:59.008Z) 0% 0% /auto repeat scroll padding-box" padding="192px 83px 193px 0px" align-items="flex-end" />
@@ -139,10 +140,17 @@ export default (() => {
 				background="--color-dark"
 				overflow-y="hidden"
 				box-sizing="border-box"
-				width="100%"
 				justify-content="center"
+				margin="0 0 0 0"
 			/>
-			<Box flex="1 0 40%" display="flex" flex-direction="column" justify-content="center">
+			<Box
+				flex="1 0 50%"
+				display="flex"
+				flex-direction="column"
+				justify-content="center"
+				padding="0px 0px 0px 83px"
+				box-sizing="border-box"
+			>
 				<Text font="700 72px/79px --fontFamily-googleInter" color="--light">
 					Optimized for
 					<br />
@@ -166,29 +174,33 @@ export default (() => {
 					width="263px"
 					height="342px"
 					position="absolute"
-					top="439px"
-					left="200px"
+					top="auto"
+					left="auto"
 					zIndex="0"
+					right="100px"
+					bottom="0px"
 				/>
 				<Image
-					width="269px"
-					height="342px"
 					src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/Group%20237.png?v=2020-11-26T16:43:25.506Z"
 					position="absolute"
-					top="43px"
-					left="200px"
+					top="73px"
+					left="auto"
 					zIndex="0"
+					right="120px"
+					bottom="auto"
+					width="206px"
+					height="290px"
 				/>
 				<Image
-					width="342.76922222222225px"
-					height="518.4391111111111px"
+					width="325px"
 					src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/Group%20236.png?v=2020-11-26T18:18:35.720Z"
 					position="absolute"
-					top="40px"
-					left="48px"
+					top="134px"
+					left="134px"
 					zIndex="1"
 					bottom="auto"
 					right="auto"
+					height="454px"
 				/>
 			</Box>
 		</Section>
@@ -228,7 +240,7 @@ export default (() => {
 					<Image width="100%" height="100%" src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/image%202.png?v=2020-11-26T17:02:07.140Z" object-fit="cover" />
 				</Box>
 				<Box box-sizing="border-box" float="right" grid-row="span 7">
-					<Image width="100%" height="100%" src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/image%203.png?v=2020-11-26T17:01:28.696Z" object-fit="cover" />
+					<Image height="100%" src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/image%203.png?v=2020-11-26T17:01:28.696Z" width="100%" object-fit="cover" />
 				</Box>
 				<Box
 					box-sizing="border-box"
@@ -248,16 +260,16 @@ export default (() => {
 					<Box position="relative" height="208px" transition="transform 1s ease 0s" hover-transform="translateX(214px)">
 						<Image
 							width="100%"
-							height="100%"
 							src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/flash%201.png?v=2020-11-26T17:16:57.440Z"
 							position="absolute"
+							height="100%"
 							top={0}
 							left={0}
 						/>
 						<Image
+							position="absolute"
 							width="100%"
 							height="100%"
-							position="absolute"
 							top={0}
 							left={0}
 							src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/flash%202.png?v=2020-11-28T17:47:15.947Z"
@@ -315,10 +327,10 @@ export default (() => {
 				border-radius="50%"
 				background="--color-accentGreen"
 				position="absolute"
+				top="auto"
+				right="auto"
 				bottom="577px"
 				left="368px"
-				right="auto"
-				top="auto"
 			/>
 			<Icon
 				category="fa"
@@ -367,7 +379,6 @@ export default (() => {
 			padding="0 0 0 0"
 			transition="background 1s ease 0s"
 		>
-			<Override slot="SectionContent" />
 			<Text font="700 91px/104px --fontFamily-googleInter" color="--light" text-align="center">
 				Xbox series X
 			</Text>
@@ -379,14 +390,14 @@ export default (() => {
 			</Text>
 			<Box height="597px" background="url(https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/xbox%20purchase.png?v=2020-11-26T17:27:28.520Z)" position="relative">
 				<Image
-					width="173px"
 					height="173px"
 					src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/badge.svg?v=2020-11-28T19:31:01.204Z"
+					width="173px"
 					position="absolute"
+					top="77px"
+					right="auto"
 					bottom="auto"
 					left="310px"
-					right="auto"
-					top="77px"
 					transform="rotate(0deg)"
 					transition="transform 1s ease 0s"
 					hover-transform="rotate(180deg)"
