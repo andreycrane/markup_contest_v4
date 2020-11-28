@@ -1,11 +1,11 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Box, Button, Text, Span } from "@quarkly/widgets";
+import { Theme, Link, Image, Box, Button, Text, Span, Icon } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override, Section } from "@quarkly/components";
 import * as Components from "components";
-import { FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaPlus, FaTwitter, FaYoutube } from "react-icons/fa";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
@@ -307,6 +307,14 @@ export default (() => {
 				<br />
 				familiar favorite.
 			</Text>
+			<Icon
+				category="fa"
+				icon={FaPlus}
+				width="42px"
+				height="42px"
+				border-radius="50%"
+				background="--color-accentGreen"
+			/>
 		</Section>
 		<Section inner-max-width="1228px" inner-width="100%">
 			<Text font="700 91px/104px --fontFamily-googleInter" color="--light" text-align="center">
