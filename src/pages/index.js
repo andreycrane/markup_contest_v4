@@ -314,9 +314,60 @@ export default (() => {
 				height="42px"
 				border-radius="50%"
 				background="--color-accentGreen"
+				position="absolute"
+				bottom="577px"
+				left="368px"
+				right="auto"
+				top="auto"
+			/>
+			<Icon
+				category="fa"
+				icon={FaPlus}
+				width="42px"
+				height="42px"
+				border-radius="50%"
+				background="--color-accentGreen"
+				position="absolute"
+				top="auto"
+				right="auto"
+				bottom="577px"
+				left="548px"
+			/>
+			<Icon
+				category="fa"
+				icon={FaPlus}
+				width="42px"
+				height="42px"
+				border-radius="50%"
+				background="--color-accentGreen"
+				position="absolute"
+				top="466px"
+				right="460px"
+				bottom="auto"
+				left="auto"
+			/>
+			<Icon
+				category="fa"
+				icon={FaPlus}
+				width="42px"
+				height="42px"
+				border-radius="50%"
+				background="--color-accentGreen"
+				position="absolute"
+				top="308px"
+				right="508px"
+				bottom="auto"
+				left="auto"
 			/>
 		</Section>
-		<Section inner-max-width="1228px" inner-width="100%">
+		<Section
+			inner-max-width="1228px"
+			inner-width="100%"
+			background="radial-gradient(ellipse at center bottom,rgba(0, 0, 0, 0) 0%,rgba(134, 207, 9, 0.345313) 8.1%,rgba(155, 240, 11, 0.4) 15.2%,rgba(0, 219, 0, 0.4) 23.3%,rgba(0, 123, 0, 0.4) 32.9%,rgba(0, 123, 0, 0.3) 35.7%,rgba(0, 123, 0, 0.2) 50%,transparent 63.3%) no-repeat"
+			padding="0 0 0 0"
+			transition="background 1s ease 0s"
+		>
+			<Override slot="SectionContent" />
 			<Text font="700 91px/104px --fontFamily-googleInter" color="--light" text-align="center">
 				Xbox series X
 			</Text>
@@ -326,7 +377,7 @@ export default (() => {
 			<Text font="700 21px/25px --fontFamily-googleInter" color="--accentGreen" text-align="center" text-transform="uppercase">
 				pre order
 			</Text>
-			<Box height="597px" background="url(https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/xbox%20purchase.png?v=2020-11-26T17:27:28.520Z),linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(134, 207, 9, 0.345313) 20.31%, rgba(155, 240, 11, 0.4) 23.53%, rgba(0, 219, 0, 0.4) 35.42%, rgba(0, 123, 0, 0.4) 40.63%, rgba(0, 132, 0, 0.4) 49.51%); opacity: 0.7;" />
+			<Box height="597px" background="url(https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/xbox%20purchase.png?v=2020-11-26T17:27:28.520Z)" />
 		</Section>
 		<Section inner-max-width="1228px" inner-width="100%">
 			<Text font="700 91px/91px --fontFamily-googleInter" color="--light">
