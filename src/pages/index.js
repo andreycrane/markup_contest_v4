@@ -16,15 +16,16 @@ export default (() => {
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
-		<Section padding="72px 106px 0px 106px" box-sizing="border-box">
-			<Override
-				slot="SectionContent"
-				flex-direction="row"
-				justify-content="space-between"
-				align-items="center"
-				margin="0px 0px 0px 0px"
-				width="100%"
-			/>
+		<Section
+			box-sizing="border-box"
+			as="section"
+			display="flex"
+			align-items="center"
+			inner-max-width="1228px"
+			inner-width="100%"
+			padding="66px 0 0 0"
+		>
+			<Override slot="SectionContent" flex-direction="row" justify-content="space-between" align-items="center" />
 			<Image width="144px" height="44px" src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/logo.svg?v=2020-11-26T16:02:28.431Z" />
 			<Box>
 				<Components.MenuLink margin="0px 43px 0px 0px" />
@@ -48,7 +49,7 @@ export default (() => {
 				Order console
 			</Button>
 		</Section>
-		<Section>
+		<Section inner-max-width="1228px" inner-width="100%">
 			<Override slot="SectionContent" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/xbox.png?v=2020-11-26T18:14:14.029Z) 100% 100%/auto no-repeat scroll padding-box" height="1010px" justify-content="center" />
 			<Text font="700 21px/25px --fontFamily-googleInter" color="--accentGreen" text-transform="uppercase">
 				completely new
@@ -64,7 +65,7 @@ export default (() => {
 				second with Xbox Series X. *
 			</Text>
 		</Section>
-		<Section padding="0 205px 0 205px" box-sizing="border-box">
+		<Section box-sizing="border-box" inner-max-width="1228px" inner-width="100%" justify-content="center">
 			<Override
 				slot="SectionContent"
 				flex-direction="row"
@@ -92,18 +93,17 @@ export default (() => {
 				</Override>
 			</Components.FeatureCard>
 		</Section>
-		<Section>
+		<Section inner-max-width="1228px" inner-width="100%">
 			<Text font="normal 700 91px/104.65px --fontFamily-googleInter" text-align="center" color="--light">
 				The fastest and the most powerful console xbox for the entire history
 			</Text>
 		</Section>
-		<Section>
+		<Section inner-max-width="1228px" inner-width="100%" justify-content="center">
 			<Override
 				slot="SectionContent"
 				flex-direction="row"
-				justify-content="flex-end"
+				justify-content="center"
 				background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/7cc62d15-d4d3-4274-b293-88e4c9571c18%201.png?v=2020-11-26T16:29:59.008Z) 0% 0% /auto repeat scroll padding-box"
-				padding="192px 83px 193px 0px"
 				margin="0px 0px 0px 0px"
 			/>
 			<Box>
@@ -127,16 +127,15 @@ export default (() => {
 				</Text>
 			</Box>
 		</Section>
-		<Section padding="0px 104px 0px 104px" box-sizing="border-box">
+		<Section box-sizing="border-box" inner-max-width="1228px" inner-width="100%" justify-content="center">
 			<Override
 				slot="SectionContent"
 				flex-direction="row"
 				background="--color-dark"
 				overflow-y="hidden"
-				padding="64px 43px 0px 144px"
 				box-sizing="border-box"
-				margin="0px 0px 0px 0px"
 				width="100%"
+				justify-content="center"
 			/>
 			<Box flex="1 0 40%" display="flex" flex-direction="column" justify-content="center">
 				<Text font="700 72px/79px --fontFamily-googleInter" color="--light">
@@ -176,17 +175,19 @@ export default (() => {
 					zIndex="0"
 				/>
 				<Image
-					width="325px"
-					height="454px"
+					width="342.76922222222225px"
+					height="518.4391111111111px"
 					src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/Group%20236.png?v=2020-11-26T18:18:35.720Z"
 					position="absolute"
-					top="130px"
-					left="52px"
+					top="40px"
+					left="48px"
 					zIndex="1"
+					bottom="auto"
+					right="auto"
 				/>
 			</Box>
 		</Section>
-		<Section>
+		<Section inner-max-width="1228px">
 			<Text font="700 91px/91px --fontFamily-googleInter" text-align="center" color="--light">
 				Complete control
 			</Text>
@@ -219,7 +220,7 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Section>
+		<Section inner-max-width="1228px" inner-width="100%">
 			<Override slot="SectionContent" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/xbox%20tech%201.png?v=2020-11-26T18:43:35.207Z) center center/contain no-repeat scroll padding-box" height="1199px" />
 			<Text font="91px/91px --fontFamily-googleInter" color="--light">
 				Technologically
@@ -236,7 +237,7 @@ export default (() => {
 				familiar favorite.
 			</Text>
 		</Section>
-		<Section>
+		<Section inner-max-width="1228px" inner-width="100%">
 			<Text font="700 91px/104px --fontFamily-googleInter" color="--light" text-align="center">
 				Xbox series X
 			</Text>
@@ -248,7 +249,7 @@ export default (() => {
 			</Text>
 			<Box height="597px" background="url(https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/xbox%20purchase.png?v=2020-11-26T17:27:28.520Z),linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(134, 207, 9, 0.345313) 20.31%, rgba(155, 240, 11, 0.4) 23.53%, rgba(0, 219, 0, 0.4) 35.42%, rgba(0, 123, 0, 0.4) 40.63%, rgba(0, 132, 0, 0.4) 49.51%); opacity: 0.7;" />
 		</Section>
-		<Section>
+		<Section inner-max-width="1228px" inner-width="100%">
 			<Text font="700 91px/91px --fontFamily-googleInter" color="--light">
 				Frequently asked questions control
 			</Text>
@@ -277,7 +278,7 @@ export default (() => {
 				</Override>
 			</Components.Accordion>
 		</Section>
-		<Section>
+		<Section inner-max-width="1228px" inner-width="100%">
 			<Box display="flex">
 				<Image height="44px" src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/logo.svg?v=2020-11-26T16:02:28.431Z" width="144px" />
 				<Box display="flex" justify-content="center" align-items="center" flex="1 0 auto">

@@ -37,7 +37,7 @@ export default {
 		"red": "#DE350B",
 		"purple": "#FD6DF9",
 		"indigo": "#9B6CFC",
-		"mainBackground": "#353535",
+		"mainBackground": "#0C0C0C",
 		"accentGreen": "#9BF00B",
 		"textColor": "#0A0A0A",
 		"textSecondary": "#818181"
@@ -156,7 +156,6 @@ export default {
 			}
 		}
 	},
-	"version": 1,
 	"fonts": {
 		"Inter": {
 			"family": "Inter",
@@ -176,5 +175,6 @@ export default {
 				]
 			}
 		}
-	}
+	},
+	"version": 10
 }
