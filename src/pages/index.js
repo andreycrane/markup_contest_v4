@@ -409,7 +409,7 @@ export default (() => {
 				/>
 			</Box>
 		</Section>
-		<Section inner-max-width="1228px" inner-width="100%" padding="0 0 0 0">
+		<Section inner-max-width="1228px" inner-width="100%" padding="0 0 0 0" margin="0 0 230px 0">
 			<Text font="700 91px/91px --fontFamily-googleInter" color="--light" margin="0 0 109px 0">
 				Frequently asked questions{" "}
 				<Span color="--accentGreen">
@@ -439,7 +439,7 @@ export default (() => {
 				<Override slot="text1">
 					Xbox Series X is launching at participating retailers worldwide on November 10, 2020.
 				</Override>
-				<Override slot="box1" margin="0px 0px 241px 0px" />
+				<Override slot="box1" />
 			</Components.Accordion>
 		</Section>
 		<Section inner-max-width="1228px" inner-width="100%" padding="0 0 0 0">
