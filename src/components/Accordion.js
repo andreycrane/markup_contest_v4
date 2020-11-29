@@ -1,6 +1,7 @@
 import React, { useCallback, useState, useEffect } from "react";
 import { useOverrides } from "@quarkly/components";
 import { Text, Icon, Box } from "@quarkly/widgets";
+import { MdKeyboardArrowUp, MdKeyboardArrowDown } from "react-icons/md";
 const defaultProps = {
 	"border-bottom": "1px solid --color-textSecondary",
 	"open": true
@@ -28,8 +29,20 @@ const overrides = {
 	},
 	"icon": {
 		"kind": "Icon",
+		"props": {}
+	},
+	"icon-up": {
 		"props": {
-			"color": "--light"
+			"color": "#FFFFFF",
+			"category": "md",
+			"icon": MdKeyboardArrowUp
+		}
+	},
+	"icon-down": {
+		"props": {
+			"color": "#F0F0F0",
+			"category": "md",
+			"icon": MdKeyboardArrowDown
 		}
 	},
 	"text1": {
@@ -59,13 +72,7 @@ const Accordion = props => {
 		<Box {...override("box")}>
 			<Box {...override("box1")}>
 				<Text {...override("text")} />
-				<Icon
-					{...override("icon")}
-					onClick={onToggle}
-					icon={toggle ? "MdKeyboardArrowUp" : "MdKeyboardArrowDown"}
-					color={toggle ? "#FFFFFF" : "#F0F0F0"}
-					category="md"
-				/>
+				<Icon {...override("icon", "icon-down", toggle && "icon-up")} onClick={onToggle} />
 			</Box>
 		</Box>
 		<Text {...override("text1")} display={toggle ? undefined : "none"} />
