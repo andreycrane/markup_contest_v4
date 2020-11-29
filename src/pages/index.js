@@ -1,11 +1,11 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Box, Button, Text, Span, Icon } from "@quarkly/widgets";
+import { Theme, Link, Image, Box, Button, Text, Span } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override, Section } from "@quarkly/components";
 import * as Components from "components";
-import { FaPlus, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaTwitter, FaYoutube } from "react-icons/fa";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
@@ -330,57 +330,30 @@ export default (() => {
 				<br />
 				familiar favorite.
 			</Text>
-			<Icon
-				category="fa"
-				icon={FaPlus}
-				width="42px"
+			<Components.PartBtn />
+			<Components.PartBtn
+				bottom="574px"
 				height="42px"
-				border-radius="50%"
-				background="--color-accentGreen"
-				position="absolute"
-				top="auto"
+				left="537px"
 				right="auto"
-				bottom="577px"
-				left="368px"
-			/>
-			<Icon
-				category="fa"
-				icon={FaPlus}
-				width="42px"
-				height="42px"
-				border-radius="50%"
-				background="--color-accentGreen"
-				position="absolute"
 				top="auto"
-				right="auto"
-				bottom="577px"
-				left="548px"
-			/>
-			<Icon
-				category="fa"
-				icon={FaPlus}
 				width="42px"
-				height="42px"
-				border-radius="50%"
-				background="--color-accentGreen"
-				position="absolute"
-				top="466px"
-				right="460px"
+			/>
+			<Components.PartBtn
+				top="482px"
+				right="469px"
 				bottom="auto"
 				left="auto"
-			/>
-			<Icon
-				category="fa"
-				icon={FaPlus}
 				width="42px"
 				height="42px"
-				border-radius="50%"
-				background="--color-accentGreen"
-				position="absolute"
-				top="308px"
-				right="508px"
+			/>
+			<Components.PartBtn
+				top="303px"
+				right="512px"
 				bottom="auto"
 				left="auto"
+				width="42px"
+				height="42px"
 			/>
 		</Section>
 		<Section
