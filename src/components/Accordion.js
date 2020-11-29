@@ -16,7 +16,8 @@ const overrides = {
 		"props": {
 			"display": "flex",
 			"justify-content": "space-between",
-			"align-items": "center"
+			"align-items": "center",
+			"cursor": "pointer"
 		}
 	},
 	"text": {
@@ -24,6 +25,7 @@ const overrides = {
 		"props": {
 			"font": "23px/34.5px --fontFamily-googleInter",
 			"color": "--light",
+			"cursor": "pointer",
 			"children": "Some text"
 		}
 	},
@@ -70,9 +72,9 @@ const Accordion = props => {
 	}, [props.open]);
 	return <Box {...rest}>
 		<Box {...override("box")}>
-			<Box {...override("box1")}>
+			<Box {...override("box1")} onClick={onToggle}>
 				<Text {...override("text")} />
-				<Icon {...override("icon", "icon-down", toggle && "icon-up")} onClick={onToggle} />
+				<Icon {...override("icon", "icon-down", toggle && "icon-up")} />
 			</Box>
 		</Box>
 		<Text {...override("text1")} display={toggle ? undefined : "none"} />
