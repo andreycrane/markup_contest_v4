@@ -5,11 +5,13 @@ const defaultProps = {
 	"href": "#",
 	"font": "600 17px/20.57px --fontFamily-googleInter",
 	"color": "--light",
+	"hover-color": "--accentGreen",
 	"children": "Browse",
 	"text-transform": "uppercase",
 	"text-decoration": "none",
 	"box-sizing": "border-box",
-	"display": "inline-block"
+	"display": "inline-block",
+	"transition": "color 0.1s ease-out"
 };
 const overrides = {};
 
