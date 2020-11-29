@@ -131,7 +131,14 @@ export default (() => {
 					<br />
 					look and play best on Xbox Series X.
 				</Text>
-				<Text font="700 21px/25px --fontFamily-googleInter" color="--accentGreen" text-transform="uppercase">
+				<Text
+					font="700 21px/25px --fontFamily-googleInter"
+					color="--accentGreen"
+					text-transform="uppercase"
+					hover-color="#A5FA15"
+					hover-text-shadow="0px 0px 20px rgba(155, 240, 11, 0.5)"
+					transition="text-shadow .5s ease 0s"
+				>
 					learn more
 				</Text>
 			</Box>
