@@ -17,7 +17,8 @@ const defaultProps = {
 	"hover-background": "#9BF00B",
 	"hover-box-shadow": "0px 0px 50px rgba(155, 240, 11, 0.5)",
 	"box-shadow": "none",
-	"transition": "box-shadow 0.5s ease 0s"
+	"transition": "box-shadow 0.5s ease 0s",
+	'z-index': 3
 };
 const overrides = {};
 
