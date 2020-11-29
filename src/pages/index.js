@@ -24,6 +24,7 @@ export default (() => {
 			inner-max-width="1228px"
 			inner-width="100%"
 			padding="66px 0 0 0"
+			margin="0 0 38px 0"
 		>
 			<Override slot="SectionContent" flex-direction="row" justify-content="space-between" align-items="center" />
 			<Image width="144px" height="44px" src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/logo.svg?v=2020-11-26T16:02:28.431Z" />
@@ -52,7 +53,7 @@ export default (() => {
 				Order console
 			</Button>
 		</Section>
-		<Section inner-max-width="1228px" inner-width="100%">
+		<Section inner-max-width="1228px" inner-width="100%" padding="0 0 0 0" margin="0 0 84px 0">
 			<Override slot="SectionContent" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/xbox.png?v=2020-11-26T18:14:14.029Z) 100% 100%/auto no-repeat scroll padding-box" height="1010px" justify-content="center" />
 			<Text font="700 21px/25px --fontFamily-googleInter" color="--accentGreen" text-transform="uppercase">
 				completely new
@@ -68,7 +69,14 @@ export default (() => {
 				second with Xbox Series X. *
 			</Text>
 		</Section>
-		<Section box-sizing="border-box" inner-max-width="1228px" inner-width="100%" justify-content="center">
+		<Section
+			box-sizing="border-box"
+			inner-max-width="1228px"
+			inner-width="100%"
+			justify-content="center"
+			padding="0 0 0 0"
+			margin="0 0 100px 0"
+		>
 			<Override
 				slot="SectionContent"
 				flex-direction="row"
@@ -96,15 +104,21 @@ export default (() => {
 				</Override>
 			</Components.FeatureCard>
 		</Section>
-		<Section inner-max-width="1228px" inner-width="100%">
-			<Text font="normal 700 91px/104.65px --fontFamily-googleInter" text-align="center" color="--light">
+		<Section inner-max-width="1228px" inner-width="100%" padding="0 0 0 0" margin="0 0 120px 0">
+			<Text font="normal 700 91px/104.65px --fontFamily-googleInter" text-align="center" color="--light" margin="0 0 0 0">
 				The fastest and the most powerful console xbox for the{" "}
 				<Span color="--accentGreen">
 					entire history
 				</Span>
 			</Text>
 		</Section>
-		<Section inner-max-width="1228px" inner-width="100%" justify-content="center" box-sizing="border-box">
+		<Section
+			inner-max-width="1228px"
+			inner-width="100%"
+			justify-content="center"
+			box-sizing="border-box"
+			padding="0 0 0 0"
+		>
 			<Override
 				slot="SectionContent"
 				flex-direction="row"
@@ -143,7 +157,13 @@ export default (() => {
 				</Text>
 			</Box>
 		</Section>
-		<Section box-sizing="border-box" inner-max-width="1228px" inner-width="100%" justify-content="center">
+		<Section
+			box-sizing="border-box"
+			inner-max-width="1228px"
+			inner-width="100%"
+			justify-content="center"
+			padding="70px 0 132px 0"
+		>
 			<Override
 				slot="SectionContent"
 				flex-direction="row"
@@ -214,8 +234,8 @@ export default (() => {
 				/>
 			</Box>
 		</Section>
-		<Section inner-max-width="1228px" quarkly-title="gallery section">
-			<Text font="700 91px/91px --fontFamily-googleInter" text-align="center" color="--light">
+		<Section inner-max-width="1228px" quarkly-title="gallery section" padding="0 0 0 0" margin="0 0 248px 0">
+			<Text font="700 91px/91px --fontFamily-googleInter" text-align="center" color="--light" margin="0 0 0 0">
 				Complete{" "}
 				<Span color="--accentGreen">
 					control
@@ -292,7 +312,7 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Section inner-max-width="1228px" inner-width="100%">
+		<Section inner-max-width="1228px" inner-width="100%" padding="0 0 0 0">
 			<Override slot="SectionContent" height="1199px" position="relative" />
 			<Box
 				position="absolute"
@@ -314,7 +334,7 @@ export default (() => {
 				transition="opacity 1s ease 0s"
 				hover-opacity="0"
 			/>
-			<Text font="normal 700 91px/91px --fontFamily-googleInter" color="--light">
+			<Text font="normal 700 91px/91px --fontFamily-googleInter" color="--light" margin="0 0 41px 0">
 				Technologically
 				<br />
 				<Span color="--accentGreen">
@@ -362,11 +382,12 @@ export default (() => {
 			background="radial-gradient(ellipse at center bottom,rgba(0, 0, 0, 0) 0%,rgba(134, 207, 9, 0.345313) 8.1%,rgba(155, 240, 11, 0.4) 15.2%,rgba(0, 219, 0, 0.4) 23.3%,rgba(0, 123, 0, 0.4) 32.9%,rgba(0, 123, 0, 0.3) 35.7%,rgba(0, 123, 0, 0.2) 50%,transparent 63.3%) no-repeat"
 			padding="0 0 0 0"
 			transition="background 1s ease 0s"
+			margin="0 0 143px 0"
 		>
-			<Text font="700 91px/104px --fontFamily-googleInter" color="--light" text-align="center">
+			<Text font="700 91px/104px --fontFamily-googleInter" color="--light" text-align="center" margin="0 0 0 0">
 				Xbox series X
 			</Text>
-			<Text font="700 53px/79px --fontFamily-googleInter" color="--light" text-align="center">
+			<Text font="700 53px/79px --fontFamily-googleInter" color="--light" text-align="center" margin="0 0 0 0">
 				$499.99
 			</Text>
 			<Text font="700 21px/25px --fontFamily-googleInter" color="--accentGreen" text-align="center" text-transform="uppercase">
@@ -388,8 +409,8 @@ export default (() => {
 				/>
 			</Box>
 		</Section>
-		<Section inner-max-width="1228px" inner-width="100%">
-			<Text font="700 91px/91px --fontFamily-googleInter" color="--light">
+		<Section inner-max-width="1228px" inner-width="100%" padding="0 0 0 0">
+			<Text font="700 91px/91px --fontFamily-googleInter" color="--light" margin="0 0 109px 0">
 				Frequently asked questions{" "}
 				<Span color="--accentGreen">
 					control
@@ -418,10 +439,11 @@ export default (() => {
 				<Override slot="text1">
 					Xbox Series X is launching at participating retailers worldwide on November 10, 2020.
 				</Override>
+				<Override slot="box1" margin="0px 0px 241px 0px" />
 			</Components.Accordion>
 		</Section>
-		<Section inner-max-width="1228px" inner-width="100%">
-			<Box display="flex">
+		<Section inner-max-width="1228px" inner-width="100%" padding="0 0 0 0">
+			<Box display="flex" margin="0px 0px 99px 0px">
 				<Image height="44px" src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/logo.svg?v=2020-11-26T16:02:28.431Z" width="144px" />
 				<Box display="flex" justify-content="center" align-items="center" flex="1 0 auto">
 					<Components.FooterLink margin="0px 43px 0px 0px" />
@@ -445,7 +467,7 @@ export default (() => {
 					</Components.SocialLink1>
 				</Box>
 			</Box>
-			<Box display="flex" justify-content="space-between">
+			<Box display="flex" justify-content="space-between" margin="0px 0px 75px 0px">
 				<Text font="500 16px/24px --fontFamily-googleInter" color="--textSecondary">
 					© Microsoft 2020
 				</Text>
