@@ -45,6 +45,9 @@ export default (() => {
 				font="normal 700 15px/18px --fontFamily-googleInter"
 				padding="21px 30px 21px 30px"
 				text-transform="uppercase"
+				hover-background="#A5FA15"
+				hover-box-shadow="0px 0px 20px rgba(155, 240, 11, 0.5)"
+				transition="box-shadow 0.5s ease 0s"
 			>
 				Order console
 			</Button>
@@ -248,6 +251,7 @@ export default (() => {
 					grid-row="span 7"
 					padding="86px 84px 86px 84px"
 					overflow-x="hidden"
+					overflow-y="hidden"
 				>
 					<Text font="700 60px/66px --fontFamily-googleInter">
 						Compatible
