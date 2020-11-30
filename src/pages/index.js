@@ -33,7 +33,7 @@ export default (() => {
 				<Components.MenuLink margin="0px 43px 0px 0px">
 					Games
 				</Components.MenuLink>
-				<Components.MenuLink margin="0px 43px 0px 0px">
+				<Components.MenuLink margin="0px 43px 0px 0px" href="#controller-section">
 					contRoller
 				</Components.MenuLink>
 				<Components.MenuLink>
@@ -234,7 +234,13 @@ export default (() => {
 				/>
 			</Box>
 		</Section>
-		<Section inner-max-width="1228px" quarkly-title="gallery section" padding="0 0 0 0" margin="0 0 248px 0">
+		<Section
+			id="controller-section"
+			inner-max-width="1228px"
+			quarkly-title="gallery section"
+			padding="0 0 0 0"
+			margin="0 0 248px 0"
+		>
 			<Text font="700 91px/91px --fontFamily-googleInter" text-align="center" color="--light" margin="0 0 0 0">
 				Complete{" "}
 				<Span color="--accentGreen">
