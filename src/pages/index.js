@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Box, Text, Span } from "@quarkly/widgets";
+import { Theme, Link, Text, Span, Box, Image } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override, Section } from "@quarkly/components";
@@ -16,45 +16,14 @@ export default (() => {
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
-		<Section
-			box-sizing="border-box"
-			as="section"
-			display="flex"
-			align-items="center"
-			inner-max-width="1228px"
-			inner-width="100%"
-			padding="66px 0 0 0"
-			margin="0 0 38px 0"
-		>
-			<Override slot="SectionContent" flex-direction="row" justify-content="space-between" align-items="center" />
-			<Image width="144px" height="44px" src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/logo.svg?v=2020-11-26T16:02:28.431Z" />
-			<Box>
-				<Components.MenuLink margin="0px 43px 0px 0px" href="#section-browse" />
-				<Components.MenuLink margin="0px 43px 0px 0px" href="#section-games">
-					Games
-				</Components.MenuLink>
-				<Components.MenuLink margin="0px 43px 0px 0px" href="#controller-section">
-					contRoller
-				</Components.MenuLink>
-				<Components.MenuLink href="#section-inside">
-					inside
-				</Components.MenuLink>
-			</Box>
-			<Link
-				background="--color-accentGreen"
-				color="--textColor"
-				font="normal 700 15px/18px --fontFamily-googleInter"
-				padding="21px 30px 21px 30px"
-				text-transform="uppercase"
-				hover-background="#A5FA15"
-				hover-box-shadow="0px 0px 20px rgba(155, 240, 11, 0.5)"
-				transition="box-shadow 0.5s ease 0s"
-				text-decoration-line="initial"
-				href="/"
-			>
-				Order console
-			</Link>
-		</Section>
+		<Components.MainMenu inner-max-width="1228px">
+			<Override slot="menu-button-icon" />
+			<Override slot="menu-button" />
+			<Override slot="box" />
+			<Override slot="menuLink2" />
+			<Override slot="menuLink" />
+			<Override slot="menu-button-icon,menu-button-icon-closed,menu-button-icon-opened" />
+		</Components.MainMenu>
 		<Section inner-max-width="1228px" inner-width="100%" padding="0 0 0 0" margin="0 0 84px 0">
 			<Override slot="SectionContent" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/xbox.png?v=2020-11-26T18:14:14.029Z) 100% 100%/auto no-repeat scroll padding-box" height="1010px" justify-content="center" />
 			<Text font="700 21px/25px --fontFamily-googleInter" color="--accentGreen" text-transform="uppercase">

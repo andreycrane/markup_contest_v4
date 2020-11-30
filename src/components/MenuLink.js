@@ -4,6 +4,7 @@ import { Link } from "@quarkly/widgets";
 const defaultProps = {
 	"href": "#",
 	"font": "600 17px/20.57px --fontFamily-googleInter",
+	"lg-font": "600 39px/47px --fontFamily-googleInter",
 	"color": "--light",
 	"hover-color": "--accentGreen",
 	"children": "Browse",
