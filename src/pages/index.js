@@ -16,16 +16,24 @@ export default (() => {
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
-		<Components.MainMenu inner-max-width="1228px">
+		<Components.MainMenu>
 			<Override slot="menu-button-icon" />
 			<Override slot="menu-button" />
 			<Override slot="box" />
 			<Override slot="menuLink2" />
 			<Override slot="menuLink" />
 			<Override slot="menu-button-icon,menu-button-icon-closed,menu-button-icon-opened" />
+			<Override slot="SectionContent" max-width="1228px" width="100%" />
 		</Components.MainMenu>
-		<Section inner-max-width="1228px" inner-width="100%" padding="0 0 0 0" margin="0 0 84px 0">
-			<Override slot="SectionContent" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/xbox.png?v=2020-11-26T18:14:14.029Z) 100% 100%/auto no-repeat scroll padding-box" height="1010px" justify-content="center" />
+		<Section padding="0 0 0 0" margin="0 0 84px 0">
+			<Override
+				slot="SectionContent"
+				background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/xbox.png?v=2020-11-26T18:14:14.029Z) 100% 100%/auto no-repeat scroll padding-box"
+				height="1010px"
+				justify-content="center"
+				max-width="1228px"
+				width="100%"
+			/>
 			<Text font="700 21px/25px --fontFamily-googleInter" color="--accentGreen" text-transform="uppercase">
 				completely new
 			</Text>
@@ -40,20 +48,14 @@ export default (() => {
 				second with Xbox Series X. *
 			</Text>
 		</Section>
-		<Section
-			box-sizing="border-box"
-			inner-max-width="1228px"
-			inner-width="100%"
-			justify-content="center"
-			padding="0 0 0 0"
-			margin="0 0 100px 0"
-		>
+		<Section box-sizing="border-box" justify-content="center" padding="0 0 0 0" margin="0 0 100px 0">
 			<Override
 				slot="SectionContent"
 				flex-direction="row"
 				justify-content="space-between"
 				margin="0px 0px 0px 0px"
 				width="100%"
+				max-width="1228px"
 			/>
 			<Components.FeatureCard margin="0px 90px 0px 0px" />
 			<Components.FeatureCard margin="0px 90px 0px 0px">
@@ -75,13 +77,8 @@ export default (() => {
 				</Override>
 			</Components.FeatureCard>
 		</Section>
-		<Section
-			id="section-browse"
-			inner-max-width="1228px"
-			inner-width="100%"
-			padding="0 0 0 0"
-			margin="0 0 120px 0"
-		>
+		<Section id="section-browse" padding="0 0 0 0" margin="0 0 120px 0">
+			<Override slot="SectionContent" width="100%" max-width="1228px" />
 			<Text font="normal 700 91px/104.65px --fontFamily-googleInter" text-align="center" color="--light" margin="0 0 0 0">
 				The fastest and the most powerful console xbox for the{" "}
 				<Span color="--accentGreen">
@@ -89,13 +86,7 @@ export default (() => {
 				</Span>
 			</Text>
 		</Section>
-		<Section
-			inner-max-width="1228px"
-			inner-width="100%"
-			justify-content="center"
-			box-sizing="border-box"
-			padding="0 0 0 0"
-		>
+		<Section justify-content="center" box-sizing="border-box" padding="0 0 0 0">
 			<Override
 				slot="SectionContent"
 				flex-direction="row"
@@ -105,6 +96,8 @@ export default (() => {
 				padding="192px 118px 192px 0px"
 				align-items="center"
 				box-sizing="border-box"
+				max-width="1228px"
+				width="100%"
 			/>
 			<Box>
 				<Override slot="SectionContent" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/7cc62d15-d4d3-4274-b293-88e4c9571c18%201.png?v=2020-11-26T16:29:59.008Z) 0% 0% /auto repeat scroll padding-box" padding="192px 83px 193px 0px" align-items="flex-end" />
@@ -136,14 +129,7 @@ export default (() => {
 				</Text>
 			</Box>
 		</Section>
-		<Section
-			id="section-games"
-			box-sizing="border-box"
-			inner-max-width="1228px"
-			inner-width="100%"
-			justify-content="center"
-			padding="70px 0 132px 0"
-		>
+		<Section id="section-games" box-sizing="border-box" justify-content="center" padding="70px 0 132px 0">
 			<Override
 				slot="SectionContent"
 				flex-direction="row"
@@ -152,6 +138,8 @@ export default (() => {
 				box-sizing="border-box"
 				justify-content="center"
 				margin="0 0 0 0"
+				max-width="1228px"
+				width="100%"
 			/>
 			<Box
 				flex="1 0 50%"
@@ -214,13 +202,8 @@ export default (() => {
 				/>
 			</Box>
 		</Section>
-		<Section
-			id="controller-section"
-			inner-max-width="1228px"
-			quarkly-title="gallery section"
-			padding="0 0 0 0"
-			margin="0 0 248px 0"
-		>
+		<Section id="controller-section" quarkly-title="gallery section" padding="0 0 0 0" margin="0 0 248px 0">
+			<Override slot="SectionContent" max-width="1228px" width="100%" />
 			<Text font="700 91px/91px --fontFamily-googleInter" text-align="center" color="--light" margin="0 0 0 0">
 				Complete{" "}
 				<Span color="--accentGreen">
@@ -298,8 +281,14 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Section id="section-inside" inner-max-width="1228px" inner-width="100%" padding="0 0 0 0">
-			<Override slot="SectionContent" height="1199px" position="relative" />
+		<Section id="section-inside" padding="0 0 0 0">
+			<Override
+				slot="SectionContent"
+				height="1199px"
+				position="relative"
+				max-width="1228px"
+				width="100%"
+			/>
 			<Box
 				position="absolute"
 				top={0}
@@ -362,14 +351,8 @@ export default (() => {
 				height="42px"
 			/>
 		</Section>
-		<Section
-			inner-max-width="1228px"
-			inner-width="100%"
-			background="radial-gradient(ellipse at center bottom,rgba(0, 0, 0, 0) 0%,rgba(134, 207, 9, 0.345313) 8.1%,rgba(155, 240, 11, 0.4) 15.2%,rgba(0, 219, 0, 0.4) 23.3%,rgba(0, 123, 0, 0.4) 32.9%,rgba(0, 123, 0, 0.3) 35.7%,rgba(0, 123, 0, 0.2) 50%,transparent 63.3%) no-repeat"
-			padding="0 0 0 0"
-			transition="background 1s ease 0s"
-			margin="0 0 143px 0"
-		>
+		<Section background="radial-gradient(ellipse at center bottom,rgba(0, 0, 0, 0) 0%,rgba(134, 207, 9, 0.345313) 8.1%,rgba(155, 240, 11, 0.4) 15.2%,rgba(0, 219, 0, 0.4) 23.3%,rgba(0, 123, 0, 0.4) 32.9%,rgba(0, 123, 0, 0.3) 35.7%,rgba(0, 123, 0, 0.2) 50%,transparent 63.3%) no-repeat" padding="0 0 0 0" transition="background 1s ease 0s" margin="0 0 143px 0">
+			<Override slot="SectionContent" max-width="1228px" width="100%" />
 			<Text font="700 91px/104px --fontFamily-googleInter" color="--light" text-align="center" margin="0 0 0 0">
 				Xbox series X
 			</Text>
@@ -397,7 +380,8 @@ export default (() => {
 				/>
 			</Box>
 		</Section>
-		<Section inner-max-width="1228px" inner-width="100%" padding="0 0 0 0" margin="0 0 230px 0">
+		<Section padding="0 0 0 0" margin="0 0 230px 0">
+			<Override slot="SectionContent" max-width="1228px" width="100%" />
 			<Text font="700 91px/91px --fontFamily-googleInter" color="--light" margin="0 0 109px 0">
 				Frequently asked questions{" "}
 				<Span color="--accentGreen">
@@ -430,7 +414,8 @@ export default (() => {
 				<Override slot="box1" />
 			</Components.Accordion>
 		</Section>
-		<Section inner-max-width="1228px" inner-width="100%" padding="0 0 0 0">
+		<Section padding="0 0 0 0">
+			<Override slot="SectionContent" max-width="1228px" width="100%" />
 			<Box display="flex" margin="0px 0px 99px 0px">
 				<Image height="44px" src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/logo.svg?v=2020-11-26T16:02:28.431Z" width="144px" />
 				<Box display="flex" justify-content="center" align-items="center" flex="1 0 auto">
