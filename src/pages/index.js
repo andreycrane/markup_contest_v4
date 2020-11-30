@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Box, Button, Text, Span } from "@quarkly/widgets";
+import { Theme, Link, Image, Box, Text, Span } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override, Section } from "@quarkly/components";
@@ -29,18 +29,18 @@ export default (() => {
 			<Override slot="SectionContent" flex-direction="row" justify-content="space-between" align-items="center" />
 			<Image width="144px" height="44px" src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/logo.svg?v=2020-11-26T16:02:28.431Z" />
 			<Box>
-				<Components.MenuLink margin="0px 43px 0px 0px" />
-				<Components.MenuLink margin="0px 43px 0px 0px">
+				<Components.MenuLink margin="0px 43px 0px 0px" href="#section-browse" />
+				<Components.MenuLink margin="0px 43px 0px 0px" href="#section-games">
 					Games
 				</Components.MenuLink>
 				<Components.MenuLink margin="0px 43px 0px 0px" href="#controller-section">
 					contRoller
 				</Components.MenuLink>
-				<Components.MenuLink>
+				<Components.MenuLink href="#section-inside">
 					inside
 				</Components.MenuLink>
 			</Box>
-			<Button
+			<Link
 				background="--color-accentGreen"
 				color="--textColor"
 				font="normal 700 15px/18px --fontFamily-googleInter"
@@ -49,9 +49,11 @@ export default (() => {
 				hover-background="#A5FA15"
 				hover-box-shadow="0px 0px 20px rgba(155, 240, 11, 0.5)"
 				transition="box-shadow 0.5s ease 0s"
+				text-decoration-line="initial"
+				href="/"
 			>
 				Order console
-			</Button>
+			</Link>
 		</Section>
 		<Section inner-max-width="1228px" inner-width="100%" padding="0 0 0 0" margin="0 0 84px 0">
 			<Override slot="SectionContent" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/xbox.png?v=2020-11-26T18:14:14.029Z) 100% 100%/auto no-repeat scroll padding-box" height="1010px" justify-content="center" />
@@ -104,7 +106,13 @@ export default (() => {
 				</Override>
 			</Components.FeatureCard>
 		</Section>
-		<Section inner-max-width="1228px" inner-width="100%" padding="0 0 0 0" margin="0 0 120px 0">
+		<Section
+			id="section-browse"
+			inner-max-width="1228px"
+			inner-width="100%"
+			padding="0 0 0 0"
+			margin="0 0 120px 0"
+		>
 			<Text font="normal 700 91px/104.65px --fontFamily-googleInter" text-align="center" color="--light" margin="0 0 0 0">
 				The fastest and the most powerful console xbox for the{" "}
 				<Span color="--accentGreen">
@@ -153,11 +161,14 @@ export default (() => {
 					hover-text-shadow="0px 0px 20px rgba(155, 240, 11, 0.5)"
 					transition="text-shadow .5s ease 0s"
 				>
-					learn more
+					<Link href="/" color="--accentGreen" text-decoration-line="initial">
+						learn more
+					</Link>
 				</Text>
 			</Box>
 		</Section>
 		<Section
+			id="section-games"
 			box-sizing="border-box"
 			inner-max-width="1228px"
 			inner-width="100%"
@@ -213,10 +224,10 @@ export default (() => {
 				<Image
 					src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/Group%20237.png?v=2020-11-26T16:43:25.506Z"
 					position="absolute"
-					top="73px"
+					top="38px"
 					left="auto"
 					zIndex="0"
-					right="120px"
+					right="99px"
 					bottom="auto"
 					width="206px"
 					height="290px"
@@ -225,8 +236,8 @@ export default (() => {
 					width="325px"
 					src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/Group%20236.png?v=2020-11-26T18:18:35.720Z"
 					position="absolute"
-					top="134px"
-					left="134px"
+					top="111px"
+					left="23px"
 					zIndex="1"
 					bottom="auto"
 					right="auto"
@@ -318,7 +329,7 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Section inner-max-width="1228px" inner-width="100%" padding="0 0 0 0">
+		<Section id="section-inside" inner-max-width="1228px" inner-width="100%" padding="0 0 0 0">
 			<Override slot="SectionContent" height="1199px" position="relative" />
 			<Box
 				position="absolute"
@@ -397,7 +408,9 @@ export default (() => {
 				$499.99
 			</Text>
 			<Text font="700 21px/25px --fontFamily-googleInter" color="--accentGreen" text-align="center" text-transform="uppercase">
-				pre order
+				<Link href="/" color="--accentGreen" text-decoration-line="initial">
+					pre order
+				</Link>
 			</Text>
 			<Box height="597px" background="url(https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/xbox%20purchase.png?v=2020-11-26T17:27:28.520Z)" position="relative">
 				<Image
@@ -452,33 +465,51 @@ export default (() => {
 			<Box display="flex" margin="0px 0px 99px 0px">
 				<Image height="44px" src="https://uploads.quarkly.io/5fbfc2ce08b41a001fec7a5a/images/logo.svg?v=2020-11-26T16:02:28.431Z" width="144px" />
 				<Box display="flex" justify-content="center" align-items="center" flex="1 0 auto">
-					<Components.FooterLink margin="0px 43px 0px 0px" />
-					<Components.FooterLink margin="0px 43px 0px 0px">
+					<Components.FooterLink margin="0px 43px 0px 0px" href="#section-browse" />
+					<Components.FooterLink margin="0px 43px 0px 0px" href="#section-games">
 						Games
 					</Components.FooterLink>
-					<Components.FooterLink margin="0px 43px 0px 0px">
+					<Components.FooterLink margin="0px 43px 0px 0px" href="#controller-section">
 						contRoller
 					</Components.FooterLink>
-					<Components.FooterLink>
+					<Components.FooterLink href="#section-inside">
 						inside
 					</Components.FooterLink>
 				</Box>
 				<Box display="flex" align-items="center">
-					<Components.SocialLink1 />
-					<Components.SocialLink1>
+					<Components.SocialLink1 href="/" />
+					<Components.SocialLink1 href="/">
 						<Override slot="icon" category="fa" icon={FaTwitter} />
 					</Components.SocialLink1>
-					<Components.SocialLink1>
+					<Components.SocialLink1 href="/">
 						<Override slot="icon" category="fa" icon={FaYoutube} />
 					</Components.SocialLink1>
 				</Box>
 			</Box>
 			<Box display="flex" justify-content="space-between" margin="0px 0px 75px 0px">
 				<Text font="500 16px/24px --fontFamily-googleInter" color="--textSecondary">
-					© Microsoft 2020
+					<Link color="--textSecondary" text-decoration-line="initial" href="/">
+						© Microsoft 2020
+					</Link>
 				</Text>
 				<Text font="500 16px/24px --fontFamily-googleInter" color="--textSecondary">
-					Contact us Privacy & cookies
+					<Link
+						color="--textSecondary"
+						overflow-wrap="normal"
+						word-break="normal"
+						white-space="normal"
+						text-indent="0"
+						text-overflow="clip"
+						hyphens="manual"
+						text-decoration-line="initial"
+						href="/"
+					>
+						Contact us
+					</Link>
+					{" "}
+					<Link color="--textSecondary" text-decoration-line="initial" href="/">
+						Privacy & cookies
+					</Link>
 				</Text>
 			</Box>
 		</Section>
